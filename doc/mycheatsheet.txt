@@ -4,15 +4,16 @@
 
 ===============================================================================
 CONTENTS
-	1. Normal Mode.......................................|myhelp-normal|
-	2. Visual Mode.......................................|myhelp-visual|
-	3. Insert Mode.......................................|myhelp-insert|
-	4. Notes.............................................|myhelp-notes|
-	5. Rebuilding this file
+	1. Mappings..........................................|myhelp-mappings|
+	2. Tips..............................................|myhelp-tips|
+	5. Rebuilding this file..............................|myhelp-rebuild|
 
 ===============================================================================
 
-1. Normal Mode                                         *myhelp-normal*
+1. Mappings                                            *myhelp-mappings*
+
+Commands
+
 	- <Leader>b  : show opened buffers
 	- <Leader>f  : browse files from the current directory
 	- <Leader>cb : comment
@@ -21,21 +22,20 @@ CONTENTS
 	- <Leader>t  : toggle tagbar
 	- CTRL-w m   : zoom/unzoom window
 
-===============================================================================
-2. Visual Mode                                         *myhelp-visual*
+
+2. Tips                                                *tips*
+
+:w !sudo tee % > /dev/null
+	Write to a protected file
+
+:!mkdir -p %:h
+  Create intermediate directories before writing a file
 
 
 ===============================================================================
-3. Insert Mode                                         *myhelp-insert*
+5. Rebuilding this file                                *myhelp-rebuild*
 
-===============================================================================
-4. Notes                                               *myhelp-notes*
-
-mycheatsheet: https://github.com/rsjeep/vim-mycheatsheet
-
-
-===============================================================================
-5. Rebuilding this file.
+Available at https://github.com/rsjeep/vim-mycheatsheet
 
 This file is loaded as a plugin. If you ever need to rebuild the tags file, run
 this command: >
